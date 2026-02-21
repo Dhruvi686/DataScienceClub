@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events - Data Science Club @ CHARUSAT</title>
+    <meta name="description" content="Join our exciting data science events, workshops, and meetups at CHARUSAT.">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="assets/css/style.css">
@@ -27,7 +28,6 @@
                 <div class="hidden md:flex items-center space-x-1 fade-in-section delay-100">
                     <a href="index.html" class="nav-link px-4 py-2 rounded-lg text-slate-300 hover:text-white transition-all duration-300 relative group">Home<span class="absolute bottom-1 left-1/2 w-0 h-0.5 bg-primary group-hover:w-1/2 group-hover:-translate-x-1/2 transition-all duration-300"></span></a>
                     <a href="about.html" class="nav-link px-4 py-2 rounded-lg text-slate-300 hover:text-white transition-all duration-300 relative group">About<span class="absolute bottom-1 left-1/2 w-0 h-0.5 bg-primary group-hover:w-1/2 group-hover:-translate-x-1/2 transition-all duration-300"></span></a>
-                    <a href="courses.html" class="nav-link px-4 py-2 rounded-lg text-slate-300 hover:text-white transition-all duration-300 relative group">Courses<span class="absolute bottom-1 left-1/2 w-0 h-0.5 bg-primary group-hover:w-1/2 group-hover:-translate-x-1/2 transition-all duration-300"></span></a>
                     <a href="events.html" class="nav-link px-4 py-2 rounded-lg text-slate-300 hover:text-white transition-all duration-300 relative group">Events<span class="absolute bottom-1 left-1/2 w-0 h-0.5 bg-primary group-hover:w-1/2 group-hover:-translate-x-1/2 transition-all duration-300"></span></a>
                     <a href="team.html" class="nav-link px-4 py-2 rounded-lg text-slate-300 hover:text-white transition-all duration-300 relative group">Team<span class="absolute bottom-1 left-1/2 w-0 h-0.5 bg-primary group-hover:w-1/2 group-hover:-translate-x-1/2 transition-all duration-300"></span></a>
                     <a href="community.html" class="nav-link px-4 py-2 rounded-lg text-slate-300 hover:text-white transition-all duration-300 relative group">Community<span class="absolute bottom-1 left-1/2 w-0 h-0.5 bg-primary group-hover:w-1/2 group-hover:-translate-x-1/2 transition-all duration-300"></span></a>
@@ -42,7 +42,6 @@
                 <div class="py-4 space-y-2 px-4">
                     <a href="index.html" class="mobile-nav-link block px-4 py-3 text-slate-300 hover:bg-primary/10 hover:text-primary rounded-xl transition-colors">Home</a>
                     <a href="about.html" class="mobile-nav-link block px-4 py-3 text-slate-300 hover:bg-primary/10 hover:text-primary rounded-xl transition-colors">About</a>
-                    <a href="courses.html" class="mobile-nav-link block px-4 py-3 text-slate-300 hover:bg-primary/10 hover:text-primary rounded-xl transition-colors">Courses</a>
                     <a href="events.html" class="mobile-nav-link block px-4 py-3 text-slate-300 hover:bg-primary/10 hover:text-primary rounded-xl transition-colors">Events</a>
                     <a href="team.html" class="mobile-nav-link block px-4 py-3 text-slate-300 hover:bg-primary/10 hover:text-primary rounded-xl transition-colors">Team</a>
                     <a href="community.html" class="mobile-nav-link block px-4 py-3 text-slate-300 hover:bg-primary/10 hover:text-primary rounded-xl transition-colors">Community</a>
@@ -51,79 +50,348 @@
         </div>
     </nav>
 
-    <section class="min-h-screen py-24 bg-background relative overflow-hidden">
-        <!-- Background Elements -->
-        <div class="absolute inset-0 w-full h-full pointer-events-none">
-             <div class="absolute top-0 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-[100px]"></div>
-             <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-secondary/5 rounded-full blur-[100px]"></div>
-        </div>
+    <section class="pt-24 pb-0 bg-background relative overflow-hidden">
+        <!-- Background elements -->
+        <div class="absolute top-0 right-0 w-1/3 h-1/3 bg-primary/5 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-1/3 h-1/3 bg-secondary/5 rounded-full blur-[100px] pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center mb-16 fade-in-section">
-                 <div class="inline-block mb-4">
-                    <span class="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium">UPCOMING EVENTS</span>
-                </div>
+            <div class="text-center mb-12 fade-in-section">
                 <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">Join Our Events</h1>
-                <p class="text-xl text-slate-400 max-w-3xl mx-auto">Connect, learn, and grow with our community through exciting workshops and meetups</p>
+                <p class="text-xl text-slate-400 max-w-3xl mx-auto mb-8">Connect, learn, and grow with our community through exciting workshops and meetups</p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="text-center mb-8 fade-in-section delay-100">
+                <div class="inline-block">
+                    <span class="px-4 py-2 bg-green-500/10 text-green-500 rounded-full text-sm font-medium">UPCOMING EVENTS</span>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                 <!-- Event 1 -->
-                <div class="bg-card rounded-2xl overflow-hidden shadow-lg border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-2 group fade-in-section delay-100">
+                <div class="bg-card rounded-2xl overflow-hidden shadow-lg border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-2 group fade-in-section delay-100 flex flex-col">
                     <div class="relative h-48 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1762968269894-1d7e1ce8894e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNoJTIwZXZlbnQlMjBjb25mZXJlbmNlJTIwcHJlc2VudGF0aW9ufGVufDF8fHx8MTc3MDgyNTg5OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Data Science Workshop" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
                          <div class="absolute top-4 right-4 bg-secondary text-white px-4 py-2 rounded-full font-medium text-sm shadow-lg">Upcoming</div>
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-bold text-white mb-4">Data Science Workshop 2026</h3>
-                        <div class="space-y-3 text-slate-400">
+                        <div class="space-y-3 text-slate-400 mb-6">
                             <div class="flex items-center gap-3"><i data-lucide="calendar" class="text-primary w-4 h-4"></i><span class="text-sm">March 15, 2026</span></div>
                             <div class="flex items-center gap-3"><i data-lucide="clock" class="text-primary w-4 h-4"></i><span class="text-sm">10:00 AM - 4:00 PM</span></div>
                             <div class="flex items-center gap-3"><i data-lucide="map-pin" class="text-primary w-4 h-4"></i><span class="text-sm">CHARUSAT Campus</span></div>
                         </div>
-                        <button class="w-full mt-6 px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-xl font-medium transition-colors shadow-lg shadow-primary/20">Register Now</button>
+                        <button class="w-full mt-auto px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-xl font-medium transition-colors shadow-lg shadow-primary/20">Register Now</button>
                     </div>
                 </div>
 
                 <!-- Event 2 -->
-                <div class="bg-card rounded-2xl overflow-hidden shadow-lg border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-2 group fade-in-section delay-200">
+                <div class="bg-card rounded-2xl overflow-hidden shadow-lg border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-2 group fade-in-section delay-200 flex flex-col">
                     <div class="relative h-48 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1763568258586-da55ea292766?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwc2NpZW5jZSUyMHZpc3VhbGl6YXRpb24lMjBjb2Rpbmd8ZW58MXx8fHwxNzcwODI1ODk4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="AI Bootcamp" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
                         <div class="absolute top-4 right-4 bg-secondary text-white px-4 py-2 rounded-full font-medium text-sm shadow-lg">Upcoming</div>
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-bold text-white mb-4">AI & Machine Learning Bootcamp</h3>
-                         <div class="space-y-3 text-slate-400">
+                         <div class="space-y-3 text-slate-400 mb-6">
                             <div class="flex items-center gap-3"><i data-lucide="calendar" class="text-primary w-4 h-4"></i><span class="text-sm">March 22, 2026</span></div>
                             <div class="flex items-center gap-3"><i data-lucide="clock" class="text-primary w-4 h-4"></i><span class="text-sm">9:00 AM - 5:00 PM</span></div>
                         </div>
-                        <button class="w-full mt-6 px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-xl font-medium transition-colors shadow-lg shadow-primary/20">Register Now</button>
+                        <button class="w-full mt-auto px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-xl font-medium transition-colors shadow-lg shadow-primary/20">Register Now</button>
                     </div>
                 </div>
 
                 <!-- Event 3 -->
-                  <div class="bg-card rounded-2xl overflow-hidden shadow-lg border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-2 group fade-in-section delay-300">
+                  <div class="bg-card rounded-2xl overflow-hidden shadow-lg border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-2 group fade-in-section delay-300 flex flex-col">
                     <div class="relative h-48 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwYW5hbHl0aWNzJTIwZGFzaGJvYXJkfGVufDF8fHx8MTc3MDcyNjgyOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Meetup" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
                         <div class="absolute top-4 right-4 bg-secondary text-white px-4 py-2 rounded-full font-medium text-sm shadow-lg">Upcoming</div>
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-bold text-white mb-4">Industry Connect Meetup</h3>
-                         <div class="space-y-3 text-slate-400">
+                         <div class="space-y-3 text-slate-400 mb-6">
                             <div class="flex items-center gap-3"><i data-lucide="calendar" class="text-primary w-4 h-4"></i><span class="text-sm">April 5, 2026</span></div>
                             <div class="flex items-center gap-3"><i data-lucide="clock" class="text-primary w-4 h-4"></i><span class="text-sm">2:00 PM - 6:00 PM</span></div>
                         </div>
-                        <button class="w-full mt-6 px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-xl font-medium transition-colors shadow-lg shadow-primary/20">Register Now</button>
+                        <button class="w-full mt-auto px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-xl font-medium transition-colors shadow-lg shadow-primary/20">Register Now</button>
+                    </div>
+                </div>
+
+                <!-- Event 4 -->
+                <div class="bg-card rounded-2xl overflow-hidden shadow-lg border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-2 group fade-in-section delay-400 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1762968269894-1d7e1ce8894e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNoJTIwZXZlbnQlMjBjb25mZXJlbmNlJTIwcHJlc2VudGF0aW9ufGVufDF8fHx8MTc3MDgyNTg5OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Data Science Workshop" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+                         <div class="absolute top-4 right-4 bg-secondary text-white px-4 py-2 rounded-full font-medium text-sm shadow-lg">Upcoming</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-4">Data Science Workshop 2026</h3>
+                        <div class="space-y-3 text-slate-400 mb-6">
+                            <div class="flex items-center gap-3"><i data-lucide="calendar" class="text-primary w-4 h-4"></i><span class="text-sm">April 12, 2026</span></div>
+                            <div class="flex items-center gap-3"><i data-lucide="clock" class="text-primary w-4 h-4"></i><span class="text-sm">10:00 AM - 4:00 PM</span></div>
+                            <div class="flex items-center gap-3"><i data-lucide="map-pin" class="text-primary w-4 h-4"></i><span class="text-sm">CHARUSAT Campus</span></div>
+                        </div>
+                        <button class="w-full mt-auto px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-xl font-medium transition-colors shadow-lg shadow-primary/20">Register Now</button>
+                    </div>
+                </div>
+
+                <!-- Event 5 -->
+                <div class="bg-card rounded-2xl overflow-hidden shadow-lg border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-2 group fade-in-section delay-500 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1763568258586-da55ea292766?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwc2NpZW5jZSUyMHZpc3VhbGl6YXRpb24lMjBjb2Rpbmd8ZW58MXx8fHwxNzcwODI1ODk4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="AI Bootcamp" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+                        <div class="absolute top-4 right-4 bg-secondary text-white px-4 py-2 rounded-full font-medium text-sm shadow-lg">Upcoming</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-4">AI & Machine Learning Bootcamp</h3>
+                         <div class="space-y-3 text-slate-400 mb-6">
+                            <div class="flex items-center gap-3"><i data-lucide="calendar" class="text-primary w-4 h-4"></i><span class="text-sm">April 19, 2026</span></div>
+                            <div class="flex items-center gap-3"><i data-lucide="clock" class="text-primary w-4 h-4"></i><span class="text-sm">9:00 AM - 5:00 PM</span></div>
+                        </div>
+                        <button class="w-full mt-auto px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-xl font-medium transition-colors shadow-lg shadow-primary/20">Register Now</button>
+                    </div>
+                </div>
+
+                <!-- Event 6 -->
+                  <div class="bg-card rounded-2xl overflow-hidden shadow-lg border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-2 group fade-in-section delay-600 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwYW5hbHl0aWNzJTIwZGFzaGJvYXJkfGVufDF8fHx8MTc3MDcyNjgyOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Meetup" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+                        <div class="absolute top-4 right-4 bg-secondary text-white px-4 py-2 rounded-full font-medium text-sm shadow-lg">Upcoming</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-4">Industry Connect Meetup</h3>
+                         <div class="space-y-3 text-slate-400 mb-6">
+                            <div class="flex items-center gap-3"><i data-lucide="calendar" class="text-primary w-4 h-4"></i><span class="text-sm">April 26, 2026</span></div>
+                            <div class="flex items-center gap-3"><i data-lucide="clock" class="text-primary w-4 h-4"></i><span class="text-sm">2:00 PM - 6:00 PM</span></div>
+                        </div>
+                        <button class="w-full mt-auto px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-xl font-medium transition-colors shadow-lg shadow-primary/20">Register Now</button>
+                    </div>
+                </div>
+
+                <!-- Event 7 -->
+                <div class="bg-card rounded-2xl overflow-hidden shadow-lg border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-2 group fade-in-section delay-700 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1762968269894-1d7e1ce8894e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNoJTIwZXZlbnQlMjBjb25mZXJlbmNlJTIwcHJlc2VudGF0aW9ufGVufDF8fHx8MTc3MDgyNTg5OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Data Science Workshop" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+                         <div class="absolute top-4 right-4 bg-secondary text-white px-4 py-2 rounded-full font-medium text-sm shadow-lg">Upcoming</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-4">Data Science Workshop 2026</h3>
+                        <div class="space-y-3 text-slate-400 mb-6">
+                            <div class="flex items-center gap-3"><i data-lucide="calendar" class="text-primary w-4 h-4"></i><span class="text-sm">May 3, 2026</span></div>
+                            <div class="flex items-center gap-3"><i data-lucide="clock" class="text-primary w-4 h-4"></i><span class="text-sm">10:00 AM - 4:00 PM</span></div>
+                            <div class="flex items-center gap-3"><i data-lucide="map-pin" class="text-primary w-4 h-4"></i><span class="text-sm">CHARUSAT Campus</span></div>
+                        </div>
+                        <button class="w-full mt-auto px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-xl font-medium transition-colors shadow-lg shadow-primary/20">Register Now</button>
+                    </div>
+                </div>
+
+                <!-- Event 8 -->
+                <div class="bg-card rounded-2xl overflow-hidden shadow-lg border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-2 group fade-in-section delay-800 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1763568258586-da55ea292766?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwc2NpZW5jZSUyMHZpc3VhbGl6YXRpb24lMjBjb2Rpbmd8ZW58MXx8fHwxNzcwODI1ODk4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="AI Bootcamp" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+                        <div class="absolute top-4 right-4 bg-secondary text-white px-4 py-2 rounded-full font-medium text-sm shadow-lg">Upcoming</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-4">AI & Machine Learning Bootcamp</h3>
+                         <div class="space-y-3 text-slate-400 mb-6">
+                            <div class="flex items-center gap-3"><i data-lucide="calendar" class="text-primary w-4 h-4"></i><span class="text-sm">May 10, 2026</span></div>
+                            <div class="flex items-center gap-3"><i data-lucide="clock" class="text-primary w-4 h-4"></i><span class="text-sm">9:00 AM - 5:00 PM</span></div>
+                        </div>
+                        <button class="w-full mt-auto px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-xl font-medium transition-colors shadow-lg shadow-primary/20">Register Now</button>
+                    </div>
+                </div>
+
+                <!-- Event 9 -->
+                  <div class="bg-card rounded-2xl overflow-hidden shadow-lg border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-2 group fade-in-section delay-900 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwYW5hbHl0aWNzJTIwZGFzaGJvYXJkfGVufDF8fHx8MTc3MDcyNjgyOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Meetup" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+                        <div class="absolute top-4 right-4 bg-secondary text-white px-4 py-2 rounded-full font-medium text-sm shadow-lg">Upcoming</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-4">Industry Connect Meetup</h3>
+                         <div class="space-y-3 text-slate-400 mb-6">
+                            <div class="flex items-center gap-3"><i data-lucide="calendar" class="text-primary w-4 h-4"></i><span class="text-sm">May 17, 2026</span></div>
+                            <div class="flex items-center gap-3"><i data-lucide="clock" class="text-primary w-4 h-4"></i><span class="text-sm">2:00 PM - 6:00 PM</span></div>
+                        </div>
+                        <button class="w-full mt-auto px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-xl font-medium transition-colors shadow-lg shadow-primary/20">Register Now</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer (Inlined) -->
+    <!-- Past Events Section -->
+    <section class="pt-0 pb-24 bg-background relative overflow-hidden">
+        <!-- Background elements -->
+        <div class="absolute top-0 right-0 w-1/3 h-1/3 bg-primary/5 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-1/3 h-1/3 bg-secondary/5 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-12 fade-in-section">
+                <div class="inline-block">
+                    <span class="px-4 py-2 bg-secondary/10 text-secondary rounded-full text-sm font-medium">PAST EVENTS</span>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Past Event 1 -->
+                <div class="bg-card rounded-2xl overflow-hidden shadow-lg border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-2 group fade-in-section delay-100 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1762968269894-1d7e1ce8894e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNoJTIwZXZlbnQlMjBjb25mZXJlbmNlJTIwcHJlc2VudGF0aW9ufGVufDF8fHx8MTc3MDgyNTg5OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Data Science Workshop" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-4">Data Science Workshop 2025</h3>
+                        <div class="space-y-3 text-slate-400 mb-6">
+                            <div class="flex items-center gap-3"><i data-lucide="calendar" class="text-primary w-4 h-4"></i><span class="text-sm">December 10, 2025</span></div>
+                            <div class="flex items-center gap-3"><i data-lucide="clock" class="text-primary w-4 h-4"></i><span class="text-sm">10:00 AM - 4:00 PM</span></div>
+                            <div class="flex items-center gap-3"><i data-lucide="map-pin" class="text-primary w-4 h-4"></i><span class="text-sm">CHARUSAT Campus</span></div>
+                        </div>
+                        <button class="w-full mt-auto px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-xl font-medium transition-colors shadow-lg shadow-primary/20">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Past Event 2 -->
+                <div class="bg-card rounded-2xl overflow-hidden shadow-lg border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-2 group fade-in-section delay-200 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1763568258586-da55ea292766?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwc2NpZW5jZSUyMHZpc3VhbGl6YXRpb24lMjBjb2Rpbmd8ZW58MXx8fHwxNzcwODI1ODk4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="AI Bootcamp" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-4">AI & Machine Learning Bootcamp</h3>
+                         <div class="space-y-3 text-slate-400 mb-6">
+                            <div class="flex items-center gap-3"><i data-lucide="calendar" class="text-primary w-4 h-4"></i><span class="text-sm">November 18, 2025</span></div>
+                            <div class="flex items-center gap-3"><i data-lucide="clock" class="text-primary w-4 h-4"></i><span class="text-sm">9:00 AM - 5:00 PM</span></div>
+                        </div>
+                        <button class="w-full mt-auto px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-xl font-medium transition-colors shadow-lg shadow-primary/20">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Past Event 3 -->
+                  <div class="bg-card rounded-2xl overflow-hidden shadow-lg border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-2 group fade-in-section delay-300 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwYW5hbHl0aWNzJTIwZGFzaGJvYXJkfGVufDF8fHx8MTc3MDcyNjgyOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Meetup" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-4">Industry Connect Meetup</h3>
+                         <div class="space-y-3 text-slate-400 mb-6">
+                            <div class="flex items-center gap-3"><i data-lucide="calendar" class="text-primary w-4 h-4"></i><span class="text-sm">October 25, 2025</span></div>
+                            <div class="flex items-center gap-3"><i data-lucide="clock" class="text-primary w-4 h-4"></i><span class="text-sm">2:00 PM - 6:00 PM</span></div>
+                        </div>
+                        <button class="w-full mt-auto px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-xl font-medium transition-colors shadow-lg shadow-primary/20">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Past Event 4 -->
+                <div class="bg-card rounded-2xl overflow-hidden shadow-lg border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-2 group fade-in-section delay-400 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1762968269894-1d7e1ce8894e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNoJTIwZXZlbnQlMjBjb25mZXJlbmNlJTIwcHJlc2VudGF0aW9ufGVufDF8fHx8MTc3MDgyNTg5OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Data Science Workshop" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-4">Data Science Workshop 2025</h3>
+                        <div class="space-y-3 text-slate-400 mb-6">
+                            <div class="flex items-center gap-3"><i data-lucide="calendar" class="text-primary w-4 h-4"></i><span class="text-sm">September 15, 2025</span></div>
+                            <div class="flex items-center gap-3"><i data-lucide="clock" class="text-primary w-4 h-4"></i><span class="text-sm">10:00 AM - 4:00 PM</span></div>
+                            <div class="flex items-center gap-3"><i data-lucide="map-pin" class="text-primary w-4 h-4"></i><span class="text-sm">CHARUSAT Campus</span></div>
+                        </div>
+                        <button class="w-full mt-auto px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-xl font-medium transition-colors shadow-lg shadow-primary/20">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Past Event 5 -->
+                <div class="bg-card rounded-2xl overflow-hidden shadow-lg border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-2 group fade-in-section delay-500 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1763568258586-da55ea292766?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwc2NpZW5jZSUyMHZpc3VhbGl6YXRpb24lMjBjb2Rpbmd8ZW58MXx8fHwxNzcwODI1ODk4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="AI Bootcamp" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-4">AI & Machine Learning Bootcamp</h3>
+                         <div class="space-y-3 text-slate-400 mb-6">
+                            <div class="flex items-center gap-3"><i data-lucide="calendar" class="text-primary w-4 h-4"></i><span class="text-sm">August 20, 2025</span></div>
+                            <div class="flex items-center gap-3"><i data-lucide="clock" class="text-primary w-4 h-4"></i><span class="text-sm">9:00 AM - 5:00 PM</span></div>
+                        </div>
+                        <button class="w-full mt-auto px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-xl font-medium transition-colors shadow-lg shadow-primary/20">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Past Event 6 -->
+                  <div class="bg-card rounded-2xl overflow-hidden shadow-lg border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-2 group fade-in-section delay-600 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwYW5hbHl0aWNzJTIwZGFzaGJvYXJkfGVufDF8fHx8MTc3MDcyNjgyOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Meetup" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-4">Industry Connect Meetup</h3>
+                         <div class="space-y-3 text-slate-400 mb-6">
+                            <div class="flex items-center gap-3"><i data-lucide="calendar" class="text-primary w-4 h-4"></i><span class="text-sm">July 12, 2025</span></div>
+                            <div class="flex items-center gap-3"><i data-lucide="clock" class="text-primary w-4 h-4"></i><span class="text-sm">2:00 PM - 6:00 PM</span></div>
+                        </div>
+                        <button class="w-full mt-auto px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-xl font-medium transition-colors shadow-lg shadow-primary/20">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Past Event 7 -->
+                <div class="bg-card rounded-2xl overflow-hidden shadow-lg border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-2 group fade-in-section delay-700 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1762968269894-1d7e1ce8894e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNoJTIwZXZlbnQlMjBjb25mZXJlbmNlJTIwcHJlc2VudGF0aW9ufGVufDF8fHx8MTc3MDgyNTg5OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Data Science Workshop" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-4">Data Science Workshop 2025</h3>
+                        <div class="space-y-3 text-slate-400 mb-6">
+                            <div class="flex items-center gap-3"><i data-lucide="calendar" class="text-primary w-4 h-4"></i><span class="text-sm">June 8, 2025</span></div>
+                            <div class="flex items-center gap-3"><i data-lucide="clock" class="text-primary w-4 h-4"></i><span class="text-sm">10:00 AM - 4:00 PM</span></div>
+                            <div class="flex items-center gap-3"><i data-lucide="map-pin" class="text-primary w-4 h-4"></i><span class="text-sm">CHARUSAT Campus</span></div>
+                        </div>
+                        <button class="w-full mt-auto px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-xl font-medium transition-colors shadow-lg shadow-primary/20">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Past Event 8 -->
+                <div class="bg-card rounded-2xl overflow-hidden shadow-lg border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-2 group fade-in-section delay-800 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1763568258586-da55ea292766?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwc2NpZW5jZSUyMHZpc3VhbGl6YXRpb24lMjBjb2Rpbmd8ZW58MXx8fHwxNzcwODI1ODk4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="AI Bootcamp" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-4">AI & Machine Learning Bootcamp</h3>
+                         <div class="space-y-3 text-slate-400 mb-6">
+                            <div class="flex items-center gap-3"><i data-lucide="calendar" class="text-primary w-4 h-4"></i><span class="text-sm">May 5, 2025</span></div>
+                            <div class="flex items-center gap-3"><i data-lucide="clock" class="text-primary w-4 h-4"></i><span class="text-sm">9:00 AM - 5:00 PM</span></div>
+                        </div>
+                        <button class="w-full mt-auto px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-xl font-medium transition-colors shadow-lg shadow-primary/20">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Past Event 9 -->
+                  <div class="bg-card rounded-2xl overflow-hidden shadow-lg border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-2 group fade-in-section delay-900 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwYW5hbHl0aWNzJTIwZGFzaGJvYXJkfGVufDF8fHx8MTc3MDcyNjgyOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Meetup" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-4">Industry Connect Meetup</h3>
+                         <div class="space-y-3 text-slate-400 mb-6">
+                            <div class="flex items-center gap-3"><i data-lucide="calendar" class="text-primary w-4 h-4"></i><span class="text-sm">April 18, 2025</span></div>
+                            <div class="flex items-center gap-3"><i data-lucide="clock" class="text-primary w-4 h-4"></i><span class="text-sm">2:00 PM - 6:00 PM</span></div>
+                        </div>
+                        <button class="w-full mt-auto px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-xl font-medium transition-colors shadow-lg shadow-primary/20">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="bg-slate-950 text-white pt-16 pb-8 border-t border-white/10 relative overflow-hidden">
         <div class="absolute inset-0 w-full h-full pointer-events-none overflow-hidden">
              <div class="absolute -bottom-1/4 -left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[100px]"></div>
@@ -139,12 +407,13 @@
                             <div class="text-xs text-slate-400">@ CHARUSAT</div>
                         </div>
                     </div>
-                    <p class="text-slate-400 mb-6 max-w-md">Join with us to learn and explore the vast field of data science and opportunities.</p>
+                    <p class="text-slate-400 mb-6 max-w-md">Join with us to learn and explore the vast field of data science and opportunities. Cultivating an environment that supports continuous learning, networking, and knowledge sharing.</p>
                     <div class="flex space-x-4">
-                        <a href="https://github.com" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all"><i data-lucide="github" class="w-5 h-5"></i></a>
+                        <a href="google.com" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all" title="whatsapp community"><i data-lucide="message-circle" class="w-5 h-5"></i></a>
+                        <!-- TODO: Update WHATSAPP COMMUNITY URL Above here -->
                         <a href="https://linkedin.com" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
                         <a href="https://instagram.com" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all"><i data-lucide="instagram" class="w-5 h-5"></i></a>
-                         <a href="mailto:dasciclub@charusat.ac.in" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all"><i data-lucide="mail" class="w-5 h-5"></i></a>
+                        <a href="mailto:dasciclub@charusat.ac.in" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all"><i data-lucide="mail" class="w-5 h-5"></i></a>
                     </div>
                 </div>
                 <div>
@@ -156,8 +425,8 @@
                 </div>
             </div>
             <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-slate-500 text-sm mb-4 md:mb-0">© <span id="current-year"></span> Data Science Club @ CHARUSAT. All rights reserved.</p>
-                <div class="flex space-x-6 text-sm text-slate-500"><a href="#" class="hover:text-white transition-colors">Privacy Policy</a><a href="#" class="hover:text-white transition-colors">Terms of Service</a></div>
+                <p class="text-slate-500 text-sm mb-4 md:mb-0">© <span id="current-year"></span> Data Science Club @ CHARUSAT.</p>
+                <div class="flex space-x-6 text-sm text-slate-500"><p>All rights reserved.</p></div>
             </div>
         </div>
     </footer>
@@ -184,10 +453,6 @@
             navbar.classList.add('bg-slate-900/90', 'backdrop-blur-md', 'border-b', 'border-white/10');
             if (window.lucide) window.lucide.createIcons();
         });
-    </script>
-</body>
-</html>
-        // Inline script removed in favor of main.js
     </script>
 </body>
 </html>
