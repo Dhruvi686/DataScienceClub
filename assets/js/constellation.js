@@ -1,9 +1,3 @@
-/**
- * Constellation / Neural Network Animation
- * A clean, modern background effect with connected nodes.
- * No binary numbers or distracting elements.
- */
-
 const canvas = document.getElementById('bg-animation');
 const ctx = canvas.getContext('2d');
 
