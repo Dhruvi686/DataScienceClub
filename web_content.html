@@ -1,0 +1,813 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Science Club | Charusat</title>
+    <!--css-->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/particlestyle.css" rel="stylesheet" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="images/LogoWithoutText.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bgcolor">
+    <div class="arrowbtn">
+      <a href="#"><span class="fas fa-angel-up"></span></a>
+    </div>
+    <div id="particles-js"></div>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-dark fixed-top"
+      id="navbar"
+    >
+      <div class="container-fluid container d-flex">
+        <a class="navbar-brand font1" style="font-size: 2rem" href="#">
+          <img
+            src="images/LogoWithoutText.png"
+            width="50px"
+            height="50px"
+            alt="Data Science Club"
+        /></a>
+        <button
+          class="navbar-toggler"
+          s
+          id="navbar-toggler"
+          style="border: none; padding: 0px"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span
+            ><i
+              name="appsicon"
+              class="uil uil-apps dark"
+              style="color: #646eff"
+            ></i
+          ></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end p-0 m-0"
+          id="navbarNav"
+        >
+          <ul
+            class="navbar-nav-mobile d-flex row justify-content-around"
+            id="navbar-mobile"
+          >
+            <div class="col p-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#home"
+                  ><span
+                    class="dark d-flex flex-column justify-content-center align-items-center"
+                    ><i class="uil uil-estate" style="font-size: 1.2rem"></i
+                    >Home</span
+                  ></a
+                >
+              </li>
+              <li class="nav-item me-0 ms-0">
+                <a class="nav-link" href="#courses"
+                  ><span
+                    class="dark d-flex flex-column justify-content-center align-items-center"
+                    ><i class="uil uil-bag" style="font-size: 1.2rem"></i
+                    >Courses</span
+                  ></a
+                >
+              </li>
+            </div>
+            <div class="col p-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#about"
+                  ><span
+                    class="dark d-flex flex-column justify-content-center align-items-center"
+                    ><i
+                      class="uil uil-brackets-curly"
+                      style="font-size: 1.2rem"
+                    ></i
+                    >About</span
+                  ></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team"
+                  ><span
+                    class="dark d-flex flex-column justify-content-center align-items-center"
+                    ><i
+                      class="uil uil-user-circle"
+                      style="font-size: 1.2rem"
+                    ></i
+                    >Team</span
+                  ></a
+                >
+              </li>
+            </div>
+            <div class="col p-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#projects"
+                  ><span
+                    class="dark d-flex flex-column justify-content-center align-items-center"
+                    ><i class="uil uil-file-alt" style="font-size: 1.2rem"></i
+                    >Projects</span
+                  ></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#community"
+                  ><span
+                    class="dark d-flex flex-column justify-content-center align-items-center"
+                    ><i class="uil uil-message" style="font-size: 1.2rem"></i
+                    >Community</span
+                  ></a
+                >
+              </li>
+            </div>
+          </ul>
+          <ul class="navbar-nav" id="navbar-navid">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home"
+                ><span class="light-font">Home</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"
+                ><span class="light-font">About</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects"
+                ><span class="light-font">Projects</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#courses"
+                ><span class="light-font">Courses</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html"
+                ><span class="light-font">Events</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team"
+                ><span class="light-font">Team</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#community"
+                ><span class="light-font">Community</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="container" id="home">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-6 p-0 m-0 d-flex justify-content-center">
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player
+            src="https://assets2.lottiefiles.com/packages/lf20_r6ahcm9f.json"
+            background="transparent"
+            speed="1"
+            style="width: 30rem; height: 30rem"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+        <div class="col-md-6">
+          <p class="p-0 m-0 font1" style="line-height: 2.5rem">
+            <span id="headings">WELCOME TO</span><br />Data Science Club
+          </p>
+          <p class="p-0 mt-2 m-0 paragraphfont" id="clubdesc">
+            Welcome to data science club @ charusat Join with us to learn and
+            explore the vast field of data science and opportunities.
+          </p>
+          
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container bgcolor" style="padding-top: 5rem">
+        <div class="row">
+          <div
+            class="col-md-5 d-flex justify-content-md-start justify-content-center"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <a class="navbar-brand font1" style="font-size: 2rem" href="#">
+              <img
+                src="images/whatdsc.png"
+                style="width: 25rem; height: auto"
+                alt="What Is Data Science"
+            /></a>
+          </div>
+          <div
+            class="col-md-7 flex-row justify-content-center align-items-center"
+            style="margin-top: 1rem"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <p class="font1 p-0 m-0 h-color" id="headings">
+              <span class="font3">“</span>WHAT IS DATA SCIENCE?<span
+                class="font3"
+                >”</span
+              >
+            </p>
+            <p
+              class="paragraphfont p-0 m-0"
+              style="
+                white-space: normal;
+                text-align: justify;
+                word-spacing: -0.1rem;
+              "
+            >
+              Data science is a multidisciplinary approach to extracting
+              actionable insights from the large and ever-increasing volumes of
+              data collected and created by today’s organizations. Data science
+              encompasses preparing data for analysis and processing, performing
+              advanced data analysis, and presenting the results to reveal
+              patterns and enable stakeholders to draw informed conclusions.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container" style="padding-top: 5rem">
+        <div class="row flex-row-reverse">
+          <div
+            class="col-md-5 d-flex justify-content-md-start justify-content-center"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <a class="navbar-brand font1" style="font-size: 2rem" href="#">
+              <img
+                src="images/wdo.png"
+                style="width: 25rem; height: auto"
+                alt="What WE Do"
+            /></a>
+          </div>
+          <div
+            class="col-md-7 flex-row justify-content-center align-items-center"
+            style="margin-top: 1rem"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <p id="headings" class="font1 p-0 m-0 h-color">
+              <span class="font3">“</span>WHAT WE DO?
+              <span class="font3">”</span>
+            </p>
+            <p
+              class="paragraphfont p-0 m-0"
+              style="
+                white-space: normal;
+                text-align: justify;
+                word-spacing: -0.3rem;
+              "
+            >
+              The Data Science Club’s primary objective is to unify colleges
+              across the country that want to promote Data Science as a
+              desirable career path to their students by getting them to join
+              our revolutionary career-oriented corporate club.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="mission">
+      <div class="contact-imfo-box">
+        <div class="container">
+          <center class="font1" id="headings">Vision</center>
+          <div class="row">
+            <div class="col-md-4 overflow-hidden">
+              <div class="rectangle-card" style="background-color: #282828">
+                <div
+                  class="col-md d-flex justify-content-between flex-column"
+                  data-aos="fade-up"
+                >
+                  <div class="row mt-1">
+                    <div class="col-auto d-flex align-items-center">
+                      <img
+                        src="images/mission.png"
+                        style="width: 2.5rem; height: auto"
+                        alt="mission"
+                      />
+                    </div>
+                  </div>
+                  <p
+                    class="paragraphfont mt-2"
+                    style="
+                      font-size: 1.2rem;
+                      word-spacing: 0.5rem;
+                      color: white;
+                      text-align: justify;
+                    "
+                  >
+                    Learning together as the community with similar interests
+                    and goals hence enriching people to get the best research
+                    experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 overflow-hidden">
+              <div class="rectangle-card" style="background-color: #282828">
+                <div
+                  class="col-md d-flex justify-content-between flex-column"
+                  data-aos="fade-up"
+                >
+                  <div class="row mt-1">
+                    <div class="col-auto d-flex align-items-center">
+                      <img
+                        src="images/mission.png"
+                        style="width: 2.5rem; height: auto"
+                        alt="mission"
+                      />
+                    </div>
+                  </div>
+                  <p
+                    class="paragraphfont mt-2"
+                    style="
+                      font-size: 1.2rem;
+                      word-spacing: -0.01em;
+                      color: white;
+                      text-align: justify;
+                    "
+                  >
+                    Striving to be a catalyst for an individual and collective
+                    success, making a lasting impact on the Data Science
+                    landscape.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 overflow-hidden">
+              <div class="rectangle-card" style="background-color: #282828">
+                <div
+                  class="col-md d-flex justify-content-between flex-column"
+                  data-aos="fade-up"
+                >
+                  <div class="row mt-1">
+                    <div class="col-auto d-flex align-items-center">
+                      <img
+                        src="images/mission.png"
+                        style="width: 2.5rem; height: auto"
+                        alt="mission"
+                      />
+                    </div>
+                  </div>
+                  <p
+                    class="paragraphfont mt-2"
+                    style="
+                      font-size: 1.2rem;
+                      word-spacing: 0.5rem;
+                      color: white;
+                      text-align: justify;
+                    "
+                  >
+                    Cultivating an environment that supports continuous
+                    learning, networking, and knowledge sharing within the
+                    domain.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="container" style="padding-top: 5rem">
+        <div class="row">
+          <div
+            class="col-md-5 d-flex justify-content-md-start justify-content-center"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <a class="navbar-brand font1" style="font-size: 2rem" href="#">
+              <img
+                src="images/project.png"
+                style="width: 25rem; height: auto"
+                alt="projects"
+            /></a>
+          </div>
+          <div
+            class="col-md-7 flex-row justify-content-center align-items-center"
+            style="margin-top: 1rem"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <p class="font1 p-0 m-0 h-color" id="headings">Projects</p>
+            <p
+              class="paragraphfont p-0 m-0"
+              style="white-space: normal; text-align: justify"
+            >
+              Data Science encompasses a wide range of scientific methods,
+              procedures, techniques, and information retrieval systems to
+              detect meaningful patterns in organized and unstructured data. As
+              each and every sector of the market is growing, data is building
+              up day by day, we need to keep the record of the data which can be
+              helpful for the analytics and evaluation. The main goal of this
+              project is to aggregate and analyze the data collected from the
+              different data sources available on the internet. Participating in
+              live Data Science Projects will enhance your confidence, technical
+              expertise, and general confidence.
+            </p>
+            <a href="projects.html">
+              <button type="button" class="btn font1 mt-2 project-btn">
+                Explore projects<i
+                  class="uil uil-external-link-alt ms-2"
+                  style="font-size: 1.5rem"
+                ></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="courses">
+      <div class="container" id="courses" style="padding-top: 5rem">
+        <div class="row flex-row-reverse">
+          <div
+            class="col-md-5 d-flex justify-content-md-start justify-content-center"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <a class="navbar-brand font1" style="font-size: 2rem" href="#">
+              <img
+                src="images/course.png"
+                style="width: 25rem; height: auto"
+                alt="Course"
+            /></a>
+          </div>
+          <div
+            class="col-md-7 flex-row justify-content-center align-items-center"
+            style="margin-top: 1rem"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <p id="headings" class="font1 p-0 m-0 h-color">Courses</p>
+            <p
+              class="paragraphfont p-0 m-0"
+              style="white-space: normal; text-align: justify"
+            >
+              The data science field is growing quickly, and more employers are
+              recognizing the value in those skills in data science. This can
+              also be a lucrative career field to pursue. By enrolling in the
+              courses we provide, one get all the required knowledge about
+              research and project data.
+            </p>
+            <a href="course.html" target="_blank">
+              <button type="button" class="btn font1 mt-2 project-btn">
+                Explore courses<i
+                  class="uil uil-external-link-alt ms-2"
+                  style="font-size: 1.5rem"
+                ></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="pt-5">
+      <div class="container overflow-hidden">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="d1-h">
+              <!-- <h6 style="color:#4BFFD4">projects</h6> -->
+              <center>
+                <p class="font1 p-0 m-0 h-color" id="headings">Mentors</p>
+                <p class="paragraphfont">Connect with our Mentors</p>
+              </center>
+            </div>
+          </div>
+        </div>
+        <!-- Mentor -->
+        <div class="row">
+          <div class="col d-flex justify-content-center p-0">
+            <div>
+              <center style="line-height: 1.25">
+                <img
+                  id="mentors"
+                  src="./images/PMP.jpg"
+                  style="width: 5rem; height: auto"
+                />
+                <p class="font1 p-0 m-0 h-color">Prof. Purvi Prajapati</p>
+                <span class="font2">Head Of the Department</span>
+                <br />
+                <span class="font2">KDPIT, CHARUSAT</span>
+                <div class="social">
+                  <a
+                    href="https://in.linkedin.com/in/purvi-prajapati-7656b449"
+                    target="_blank"
+                    ><i class="uil uil-linkedin" style="font-size: 2rem"></i
+                  ></a>
+                </div>
+              </center>
+            </div>
+          </div>
+          <!-- <div class="col-md-6 d-flex justify-content-center p-0 pt-5 pt-md-0">
+            <div>
+              <center style="line-height: 1.25">
+                <img
+                  id="mentors"
+                  src="./images/mentor-2.png"
+                  style="width: 13rem; height: auto"
+                />
+                <p class="font1 p-0 m-0 h-color">Mrudang Pandya</p>
+                <span class="font2">Research Lead @ Jekson Vision</span>
+                <br />
+                <span class="font2">KDPIT, CHARUSAT</span>
+                <div class="social">
+                  <a
+                    href="https://www.linkedin.com/in/mrudang-pandya-phd-830487b3/"
+                    target="_blank"
+                    ><i class="uil uil-linkedin" style="font-size: 2rem"></i
+                  ></a>
+                </div>
+              </center>
+            </div>
+          </div> -->
+        </div>
+        <br />
+        <div
+          class="secondrow"
+          style="width: 100%; display: flex; justify-content: center"
+        >
+          <div class="col-md-6 d-flex justify-content-center p-0">
+            <div>
+              <center style="line-height: 1.25">
+                <img
+                  id="mentors"
+                  src="./images/mentor-5.png"
+                  style="width: 13rem; height: auto"
+                />
+                <p class="font1 p-0 m-0 h-color">Prof. Jalpesh Vasa</p>
+                <span class="font2">Assistant Professor</span>
+                <br />
+                <span class="font2">Dept of AIML, CSPIT, CHARUSAT</span>
+                <div class="social">
+                  <a
+                    href="https://www.linkedin.com/in/jalpesh-vasa/"
+                    target="_blank"
+                    ><i class="uil uil-linkedin" style="font-size: 2rem"></i
+                  ></a>
+                </div>
+              </center>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex justify-content-center p-0">
+            <div>
+              <center style="line-height: 1.25">
+                <img
+                  id="mentors"
+                  src="./images/mentor-4.png"
+                  style="width: 13rem; height: auto"
+                />
+                <p class="font1 p-0 m-0 h-color">Prof. Hemant Yadav</p>
+                <span class="font2">Assistant Professor</span>
+                <br />
+                <span class="font2">KDPIT, CHARUSAT</span>
+                <div class="social">
+                  <a
+                    href="https://www.linkedin.com/in/hemantnyadav/"
+                    target="_blank"
+                    ><i class="uil uil-linkedin" style="font-size: 2rem"></i
+                  ></a>
+                </div>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="d1-h pt-5">
+              <!-- <h6 style="color:#4BFFD4">projects</h6> -->
+              <center>
+                <h1 id="headings" class="font1 h-color">Our Creative Team</h1>
+                <p class="paragraphfont">
+                  Connect with the entire team of Data Science Club @ Charusat
+                </p>
+              </center>
+            </div>
+          </div>
+        </div>
+        <!-- Current Memebers -->
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-sm-8 col-lg-6">
+              <!-- Section Heading-->
+              <div
+                class="section_heading text-center wow fadeInUp"
+                data-wow-delay="0.2s"
+                style="
+                  visibility: visible;
+                  animation-delay: 0.2s;
+                  animation-name: fadeInUp;
+                  padding-top: 1em;
+                  padding-bottom: 3em;
+                "
+              >
+                <h3>Our <span> Team</span></h3>
+                <div class="line"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="responsive" id="memberContainer"></div>
+          </div>
+        </div>
+        <!-- Alumni  -->
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-sm-8 col-lg-6">
+              <!-- Section Heading-->
+              <div
+                class="section_heading text-center wow fadeInUp"
+                data-wow-delay="0.2s"
+                style="
+                  visibility: visible;
+                  animation-delay: 0.2s;
+                  animation-name: fadeInUp;
+                  padding-top: 1em;
+                  padding-bottom: 3em;
+                "
+              >
+                <h3><span> Alumni</span></h3>
+                <div class="line"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="responsive" id="almContainer"></div>
+          </div>
+        </div>
+        <!-- End Of Team -->
+      </div>
+    </section>
+
+    <section id="community">
+      <center>
+        <!-- <div class="skewed"></div> -->
+        <div class="container">
+          <!-- <div class="wave"></div> -->
+          <div class="row gy-2 justify-content-center">
+            <div id="headings" class="col-md-12">
+              <h1>Community</h1>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-12">
+              <ul class="communitylist">
+                <li>
+                  <h3>
+                    Don't miss out on the action, Join our community now!!!
+                  </h3>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <img src="images/communityimg.png" style="width: 25rem" />
+            </div>
+            <div class="col-md-6 align-self-center">
+              <div class="col">
+                <a
+                  href="https://www.instagram.com/datascienceclub.charusat/"
+                  target="_blank"
+                  class="hover"
+                  ><img
+                    style="width: 15rem"
+                    class="hoverImgEffect"
+                    src="https://img.icons8.com/fluency/512/instagram-new.png"
+                /></a>
+                <a
+                  href="https://www.linkedin.com/in/data-science-club-charusat-038449233/"
+                  target="_blank"
+                  class="hover"
+                  ><img
+                    style="width: 15rem"
+                    class="hoverImgEffect"
+                    src="https://img.icons8.com/fluency/512/linkedin.png"
+                /></a>
+                <a href="https://discord.gg/QuCnNXVCdA" target="_blank"
+                  ><img
+                    style="width: 15rem"
+                    class="hoverImgEffect"
+                    src="https://img.icons8.com/color/240/000000/discord--v2.png"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </center>
+    </section>
+    <section id="getintouch">
+      <center>
+        <!-- <div class="skewed"></div> -->
+        <div class="container">
+          <!-- <div class="wave"></div> -->
+          <div class="row gy-2 justify-content-center">
+            <div id="headings" class="col-md-12">
+              <h1 class="font1" style="color: #86e26f">Get in Touch</h1>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-12">
+              <ul class="communitylist">
+                <li>
+                  <h3>
+                    Don't forgot to contact us at
+                    <a
+                      style="text-decoration: none; color: #86e26f"
+                      href="mailto:dasciclub@charusat.ac.in"
+                      >dasciclub@charusat.ac.in</a
+                    >
+                    in case of any Queries!
+                  </h3>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </center>
+    </section>
+    <!-- Back to top button -->
+    <a id="button"></a>
+    <!-- scripts -->
+    <footer>
+      <center>
+        <div class="dark cngthm font1 p-3">
+          <div class="copyright" style="font-size: 0.75rem !important">
+            &copy; Copyright
+            <strong><span>Data Science Club @ CHARUSAT</span></strong
+            >. All Rights Reserved
+          </div>
+        </div>
+      </center>
+    </footer>
+    <script src="js/teams.js"></script>
+    <script src="vendors/particles.js"></script>
+    <script src="vendors/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/script.js"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+<!-- href="https://my.forms.app/datascienceclubcharusat/registration-form" -->
+
