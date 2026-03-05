@@ -128,49 +128,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Previous Team Slider 2023
-    if (document.getElementById('slider-2023')) {
-        new AutoSlider('slider-2023', {
-            interval: 4000,
-            slideWidth: 280, 
-            gap: 24,
-            autoRotate: false
-        });
-    }
 
-    // Tab Switching Logic
-    const btn2024 = document.getElementById('btn-2024');
-    const btn2023 = document.getElementById('btn-2023');
-    const slider2024 = document.getElementById('slider-2024');
-    const slider2023 = document.getElementById('slider-2023');
-
-    if (btn2024 && btn2023 && slider2024 && slider2023) {
-        btn2024.addEventListener('click', () => {
-            // Update Buttons
-            btn2024.classList.add('bg-primary', 'text-white');
-            btn2024.classList.remove('bg-white/10', 'text-slate-400');
-            btn2023.classList.remove('bg-primary', 'text-white');
-            btn2023.classList.add('bg-white/10', 'text-slate-400');
-
-            // Toggle Sliders
-            slider2024.classList.remove('hidden');
-            slider2024.classList.add('fade-in-section'); // Re-trigger fade in if needed, or just show
-            slider2023.classList.add('hidden');
-            slider2023.classList.remove('fade-in-section');
-        });
-
-        btn2023.addEventListener('click', () => {
-            // Update Buttons
-            btn2023.classList.add('bg-primary', 'text-white');
-            btn2023.classList.remove('bg-white/10', 'text-slate-400');
-            btn2024.classList.remove('bg-primary', 'text-white');
-            btn2024.classList.add('bg-white/10', 'text-slate-400');
-
-             // Toggle Sliders
-            slider2023.classList.remove('hidden');
-            slider2023.classList.add('fade-in-section');
-            slider2024.classList.add('hidden');
-            slider2024.classList.remove('fade-in-section');
-        });
-    }
 });
